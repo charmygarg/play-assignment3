@@ -1,0 +1,14 @@
+.jumbotron {
+    background-color: #f6f6f6;
+
+    padding: 100px 25px;
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.logo {
+    font-size: 200px;
+}
+h1 span {
+    color: blue;
+}
