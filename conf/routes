@@ -11,15 +11,15 @@ GET     /message                    controllers.AsyncController.message
 
 GET     /signUp                     controllers.SignUpController.signUp
 
-POST    /welcome/*name              controllers.SignUpController.signUpAction(name, username, password, confirmPassword)
+POST    /signUpAction/*name         controllers.SignUpController.signUpAction(name, username, password, confirmPassword)
 
-GET    /login/*username             controllers.LoginController.loginAction(username, password)
+GET    /loginAction/*username       controllers.LoginController.loginAction(username, password)
 
-GET    /profile/*username           controllers.ProfileController.profileAction(username)
+GET    /profile/*name               controllers.ProfileController.profile(name,username,password)
 
 GET     /login                      controllers.LoginController.login
 
-GET     /                           controllers.WelcomeController.welcome
+GET     /welcome                    controllers.WelcomeController.welcome
 
 GET     /javascriptRoutes           controllers.JavascriptRouterController.javascriptRoutes
 

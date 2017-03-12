@@ -3,7 +3,7 @@
     $('#logout').on("click",function(){
 
                 console.log("clicked")
-                jsRoutes.controllers.WelcomeController.welcome().ajax({
+                jsRoutes.controllers.ProfileController.profile().ajax({
                             success: function(data){
                               $('#body').html(data);
 

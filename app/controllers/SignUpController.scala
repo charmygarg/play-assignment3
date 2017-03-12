@@ -11,14 +11,15 @@ class SignUpController @Inject()(signUpService: SignUpService) extends Controlle
     Ok(views.html.signUp())
   }
 
-  def signUpAction(name: String, username: String, password: String, confirmPassword: String) = Action { implicit request =>
+  def signUpAction(name: String, username: String, password: String, confirmPassword: String) =
+    Action { implicit request =>
     if(password == confirmPassword) {
       val data = PersonSignUp(name, username, password, confirmPassword)
       signUpService.setCache(data)
       Ok(views.html.profile(name, username, password))
     }
     else {
-      Ok("Password doesn't match")
+      Ok(views.html.signUp())
     }
   }
 

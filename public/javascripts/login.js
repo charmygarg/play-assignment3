@@ -10,7 +10,7 @@ $(document).ready(function(){
 
                             },
                             error: function(){
-                            $('#body').html("hello");
+                            $('#body').html("Not a valid user");
                             alert("fail")
                           }
 
