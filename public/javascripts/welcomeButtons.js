@@ -8,7 +8,7 @@ $(document).ready(function(){
                         $('#body').html(data);
                       },
                       error: function(){
-                      $('#body').html("hello");
+                      $('#body').html("Please try again");
                       alert("fail")
                     }
           })
@@ -19,7 +19,7 @@ $(document).ready(function(){
                               $('#body').html(data);
                             },
                             error: function(){
-                            $('#body').html("hello");
+                            $('#body').html("Please try again");
                             alert("fail")
                           }
                 })

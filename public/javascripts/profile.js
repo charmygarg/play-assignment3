@@ -9,7 +9,7 @@
 
                             },
                             error: function(){
-                            $('#body').html("hello");
+                            $('#body').html("Failure in logging out");
                             alert("fail")
                           }
 
